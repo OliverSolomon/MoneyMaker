@@ -7,6 +7,6 @@ To create an account on binance for the API keys, use: https://www.binance.com/e
 
 
 ## ToDO
-[] Get Paper Trading Data
-[] Code Mean Reversion Algo
-[] Test MR strategy on the Paper Trading Data
+[ ] Get Paper Trading Data
+[ ] Code Mean Reversion Algo
+[ ] Test MR strategy on the Paper Trading Data
