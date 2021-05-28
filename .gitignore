@@ -131,3 +131,7 @@ dmypy.json
 
 #additional python files
 env.py
+
+#generated CSV files
+15minutes.csv
+2012to2021.csv

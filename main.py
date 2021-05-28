@@ -8,9 +8,14 @@ IT IS FOR THE BINANCE TESTNET
 from binance import Client, ThreadedWebsocketManager, ThreadedDepthCacheManager
 from env import Key, Secrets
 
+
+from historyDataGetter import get_simple_Historical_data, getHitoricalData_csv
+
 client = Client(Key, Secrets, testnet=True)
 
-depth = client.get_order_book(symbol='BNBBTC')
+coinPair = "BTCUSDT"
+
+depth = client.get_order_book(symbol=coinPair)
 
 # if you get a timestamp error, restart your time server/sync your clock 
 # or see https://github.com/ccxt/ccxt/issues/773#issuecomment-849941742_
@@ -37,17 +42,15 @@ def balances():
         print(token["symbol"] + " : " + token["price"])
 
 balances()
+
+
+
 #Get KLines. 
 
 #klines for BTCUSDT for 15 minutes.
-candles = client.get_klines(symbol="BTCUSDT", interval=Client.KLINE_INTERVAL_15MINUTE)
+get_simple_Historical_data()
 
-for candlestick in candles:
-    print(  "OpenTime :" + str(candlestick[0]) + 
-            "  Open($) :" + candlestick[1] + 
-            "  High($) :" + candlestick[2] + 
-            "  Low($) :" + candlestick[3] + 
-            "  Close($) :" + candlestick[4]
-        )
+#get workable KLINE data. (1, Jan 2012 - 28, May 2021)
+getHitoricalData_csv()
 
-# PLot them using Matplotlib or ploty
+# Plot KLINES using Matplotlib or ploty

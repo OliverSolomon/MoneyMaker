@@ -1,3 +1,4 @@
+import ta
 import ccxt
 from env import Key, Secrets
 
