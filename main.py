@@ -26,5 +26,28 @@ def privateBalance():
     btc_balance = client.get_asset_balance(asset="BTC")
     print(btc_balance)
 
-
 privateBalance()
+
+
+#show current prices of all alts on binance
+def balances():
+    alts_prices = client.get_all_tickers()
+    
+    for token in alts_prices:
+        print(token["symbol"] + " : " + token["price"])
+
+balances()
+#Get KLines. 
+
+#klines for BTCUSDT for 15 minutes.
+candles = client.get_klines(symbol="BTCUSDT", interval=Client.KLINE_INTERVAL_15MINUTE)
+
+for candlestick in candles:
+    print(  "OpenTime :" + str(candlestick[0]) + 
+            "  Open($) :" + candlestick[1] + 
+            "  High($) :" + candlestick[2] + 
+            "  Low($) :" + candlestick[3] + 
+            "  Close($) :" + candlestick[4]
+        )
+
+# PLot them using Matplotlib or ploty
