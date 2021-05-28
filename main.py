@@ -19,6 +19,12 @@ depth = client.get_order_book(symbol='BNBBTC')
 btc_deposit_addr = client.get_deposit_address(coin="BTC")
 print(btc_deposit_addr["address"])
 
-btc_balance = client.get_asset_balance(asset="BTC")
-print(btc_balance)
 
+#getting balance from main account. NOT TESTNET
+def privateBalance():
+    client = Client(Key, Secrets)
+    btc_balance = client.get_asset_balance(asset="BTC")
+    print(btc_balance)
+
+
+privateBalance()

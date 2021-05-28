@@ -10,3 +10,13 @@ To create an account on binance for the API keys, use: https://www.binance.com/e
 - [ ] Get Paper Trading Data
 - [ ] Code Mean Reversion Algo
 - [ ] Test MR strategy on the Paper Trading Data
+
+
+## How to Use
+
+- [x] Set up Binance [Testnet](https://testnet.binance.org/)
+- [x] To fund your Testnet wallet, Install metamask/math wallet & Binance wallet extension on your browser. here is a [tutorial](https://academy.binance.com/en/articles/binance-dex-funding-your-testnet-account)
+- [x] Get free BNB from [Here](https://testnet.binance.org/faucet-smart)
+- [x] To check if your transfer has been submitted, check [here](https://testnet.bscscan.com/)
+    > **status:**  *Order submitted but no balance in my account yet.*
+- [ ] Send the balance to your Binance Smart Chain Wallet (BSC wallet) 
