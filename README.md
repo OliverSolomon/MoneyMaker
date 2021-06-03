@@ -22,3 +22,5 @@ To create an account on binance for the API keys, use: https://www.binance.com/e
 - [x] To check if your transfer has been submitted, check [here](https://testnet.bscscan.com/)
     > **status:**  *Order submitted but no balance in my account yet.*
 - [ ] Send the balance to your Binance Smart Chain Wallet (BSC wallet) 
+
+![dex](https://user-images.githubusercontent.com/47696354/120004335-4d465800-bfdf-11eb-8594-3478f7136f02.png)
