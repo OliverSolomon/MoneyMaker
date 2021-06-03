@@ -30,7 +30,7 @@ def get_simple_Historical_data():
     #     candlestick_writer.writerow(candlestick)
 
     with open('15minutes.csv', 'w', newline='') as csvHistory:
-        candlestick_writer = csv.writer(csvHistory, delimiter='-')
+        candlestick_writer = csv.writer(csvHistory, delimiter=',')
 
         for candlestick in candles:
             candlestick_writer.writerow(candlestick)

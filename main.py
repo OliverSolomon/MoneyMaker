@@ -19,6 +19,7 @@ depth = client.get_order_book(symbol=coinPair)
 
 # if you get a timestamp error, restart your time server/sync your clock 
 # or see https://github.com/ccxt/ccxt/issues/773#issuecomment-849941742_
+# for linux systems run "sudo systemctl restart ntp "
 
 #getting your deposit address
 btc_deposit_addr = client.get_deposit_address(coin="BTC")
@@ -51,6 +52,6 @@ balances()
 get_simple_Historical_data()
 
 #get workable KLINE data. (1, Jan 2012 - 28, May 2021)
-getHitoricalData_csv()
+# getHitoricalData_csv()
 
 # Plot KLINES using Matplotlib or ploty

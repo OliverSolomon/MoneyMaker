@@ -1,3 +1,4 @@
 python-binance
 ccxt
 ta-lib
+plotly
